@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+
+# Build output. `npm run build` makes the official-look build in built/ (local and internal demos);
+# the public GitHub Pages build (neutral branding) is made by CI into site/.
+built/
+site/
+
+.DS_Store
+Thumbs.db

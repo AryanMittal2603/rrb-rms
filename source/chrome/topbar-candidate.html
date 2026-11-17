@@ -1,0 +1,18 @@
+<div class="topbar">
+  <div class="topbar__inner">
+    <p class="topbar__session"><span class="topbar__demo">{{t:rms.chrome.demo}}</span> {{t:common.topbar.session}} <span class="topbar__timer" data-countdown>29:59</span></p>
+    <div class="topbar__tools">
+      {{> fonts}}
+      {{lang-switch}}
+      <div class="avatar">
+        <button type="button" class="avatar__btn" id="avatar-btn" aria-label="{{t:common.avatar.menu}}" aria-haspopup="true" aria-expanded="false" aria-controls="avatar-menu"><img class="avatar__img" id="avatar-img" src="{{brand:icons/user-icon.png}}" alt="{{t:common.avatar.picture}}" width="42" height="42"></button>
+        <div class="avatar__menu" id="avatar-menu" hidden>
+          <div class="avatar__head"><p class="avatar__id" id="avatar-name"></p></div>
+          <a class="avatar__item" href="#/profile"><svg class="avatar__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 20V10H6v10h12m0-12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h9V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3H7a5 5 0 0 1 5-5 5 5 0 0 1 5 5v2h1m-6 9a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2z"/></svg>{{t:rms.chrome.profile}}</a>
+          <div class="avatar__divider"></div>
+          <button type="button" class="avatar__item avatar__item--danger" data-logout><svg class="avatar__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.56 5.44l-1.45 1.45A5.97 5.97 0 0 1 18 12a6 6 0 0 1-6 6 6 6 0 0 1-6-6c0-2.17 1.16-4.06 2.88-5.12L7.44 5.44A7.96 7.96 0 0 0 4 12a8 8 0 0 0 8 8 8 8 0 0 0 8-8c0-2.72-1.36-5.12-3.44-6.56M13 3h-2v10h2"/></svg>{{t:common.avatar.logout}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+{
+  "rms.chrome.demo": "DEMO",
+  "rms.chrome.switchRole": "Switch role",
+  "rms.chrome.resetDemo": "Reset demo data",
+  "rms.chrome.profile": "My profile",
+  "rms.cnav.status": "Recruitment Status",
+  "rms.cnav.dv": "DV & Medical",
+  "rms.cnav.documents": "Documents & Letters",
+  "rms.cnav.grievances": "Grievances",
+  "rms.cnav.notifications": "Notifications",
+  "rms.cnav.label": "Candidate menu",
+  "rms.demo.title": "Recruitment Management System",
+  "rms.demo.subtitle": "Product demo · not an official RRB or Government of India website",
+  "rms.demo.banner": "Product demonstration with synthetic data. This is not an official website of any Railway Recruitment Board, the Ministry of Railways or the Government of India, and nothing you enter here is sent anywhere.",
+  "rms.demo.footer": "Product demo with synthetic data · not an official website of any Railway Recruitment Board"
+}

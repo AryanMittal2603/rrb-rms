@@ -1,0 +1,15 @@
+{
+  "name": "rrb-rms-ui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RRB Recruitment Management System (RMS): demo frontend in the RRB portal (AMS) design system. Frontend only, synthetic data kept in the browser.",
+  "scripts": {
+    "build": "node source/build.cjs",
+    "build:public": "RMS_PUBLIC=1 RMS_DIST=site node source/build.cjs",
+    "build:hindi": "RMS_HINDI=1 node source/build.cjs",
+    "serve": "python3 -m http.server 8080 --directory built"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2"
+  }
+}

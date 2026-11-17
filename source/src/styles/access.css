@@ -1,0 +1,21 @@
+.a11y-larger .chrome--public .topbar__tools, .a11y-larger .oa-card__dates { flex-wrap: wrap; }
+
+.a11y-high-contrast *,
+.a11y-high-contrast *::before,
+.a11y-high-contrast *::after { background-color: #000 !important; color: #fff !important; border-color: #fff !important; text-shadow: none !important; box-shadow: none !important; }
+.a11y-high-contrast, .a11y-high-contrast body { background: #000 !important; color: #fff !important; }
+.a11y-high-contrast img { background-color: #fff !important; }
+.a11y-high-contrast .dialog__head, .a11y-high-contrast .pref__item, .a11y-high-contrast .cal__day--off { background-image: none !important; }
+.a11y-high-contrast a, .a11y-high-contrast a * { color: #ff0 !important; text-decoration: underline !important; }
+.a11y-high-contrast input, .a11y-high-contrast select, .a11y-high-contrast textarea, .a11y-high-contrast button { border: 1px solid #fff !important; }
+.a11y-high-contrast ::placeholder { color: #ddd !important; opacity: 1 !important; }
+.a11y-high-contrast :focus { outline: 3px solid #ff0 !important; outline-offset: 2px !important; }
+
+.a11y-highlight-links a, .a11y-highlight-links a * { background-color: #ff0 !important; color: #000 !important; text-decoration: underline !important; }
+.a11y-highlight-links a { outline: 2px solid #000 !important; }
+.a11y-highlight-links a:focus { outline: 3px solid #00f !important; }
+
+.a11y-text-spacing * { letter-spacing: .12em !important; word-spacing: .16em !important; }
+.a11y-text-spacing p { margin-bottom: 2em !important; }
+
+.a11y-line-height * { line-height: 1.8 !important; }

@@ -1,0 +1,68 @@
+/* Copied verbatim from AMS src/styles/features/account.css (sign-in block) so RMS sign-in looks identical. Image paths adjusted to the RMS tree. */
+.chrome--signin .main { max-width: none; padding: 0; }
+.signin { display: flex; align-items: center; justify-content: center; box-sizing: border-box; min-height: calc(100vh - 215px); padding: 50px 0; background-color: #000; background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../../images/account/login-bg-640.jpg); background-position: center top; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; text-align: center; }
+.signin__card, .signin__notice { box-sizing: border-box; display: inline-block; width: 100%; max-width: 480px; margin: 0; padding: 30px; background: rgba(255, 255, 255, .8); box-shadow: 0 0 10px rgba(0, 0, 0, .12); text-align: center; }
+.signin__head { display: flex; align-items: center; justify-content: center; margin: 0 0 30px; }
+.signin__head[hidden], .signin__back[hidden], .signin__view[hidden] { display: none; }
+.signin__title { margin: 0; color: #313131; font-family: Jost, Arimo, Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 400; line-height: 1.1; }
+.signin__back { flex: none; margin: 0 10px 0 0; padding: 0; border: 0; background: none; color: #04046e; line-height: 1; cursor: pointer; }
+.signin__back:hover, .signin__back:focus { color: #00f; outline: 2px solid blue; }
+.signin__arrow { display: block; fill: currentColor; }
+.signin__view { margin: 0; text-align: left; }
+.signin__row { margin: 0 0 5px; }
+.signin__btn { box-sizing: border-box; display: block; width: 100%; padding: 15.5px 50px 14.5px; border: 0; border-radius: 3px; background: #3a1b53; box-shadow: 0 0 5px rgba(0, 0, 0, .2); color: #fff; font-family: Jost, Arimo, Arial, Helvetica, sans-serif; font-size: 17px; font-weight: 400; line-height: 20px; text-align: center; cursor: pointer; }
+.signin__btn:hover { background: #895dae; }
+.signin__btn:focus { outline: 2px solid #6e4794; }
+.signin__btn--aadhaar, .signin__btn--aadhaar:hover { background: orange; }
+.signin__btn[disabled] { cursor: default; opacity: .65; }
+.signin__group { position: relative; margin: 0 0 15px; }
+.signin__input { box-sizing: border-box; display: block; width: 100%; height: 48px; padding: 15.5px 56px 15.5px 20px; border: 1px solid transparent; border-left: 0; border-radius: 3px; background: #fff; box-shadow: 0 0 5px rgba(0, 0, 0, .2); color: #616161; font-family: inherit; font-size: 16px; font-weight: 500; line-height: normal; outline: none; }
+.signin__addon { position: absolute; top: 0; right: 0; box-sizing: border-box; width: 48px; height: 48px; margin: 0; padding: 0; border: 0; border-left: 1px solid #5a5959; background: none; color: #616161; line-height: 48px; text-align: center; cursor: pointer; }
+.signin__addon svg { display: inline-block; vertical-align: middle; fill: currentColor; }
+.signin__addon--icon { cursor: default; }
+.signin__input--lower { text-transform: lowercase; }
+.eye { fill: currentColor; stroke: currentColor; }
+.eye__slash { display: none; }
+.is-shown .eye__slash { display: inline; }
+.signin__otp-row { display: flex; flex-wrap: wrap; align-items: center; margin: 0 0 15px; }
+.signin__generate { flex: none; height: 43px; margin: 0 8px 0 0; padding: 4px 10px; border: 1px solid #895dae; border-radius: 6px; background: #f7eeff; color: #895dae; font-family: inherit; font-size: 12px; font-weight: 600; line-height: 24px; cursor: pointer; }
+.signin__generate[disabled] { background: gray; color: #ccc; cursor: auto; }
+.signin .otp-boxes { display: flex; flex: 1 1 0; min-width: 0; }
+.signin .otp-boxes__box { box-sizing: border-box; flex: 0 1 39px; min-width: 0; width: 39px; height: 42px; margin: 0 3px 0 0; padding: 0; border: 1px solid #c5c5c5; border-radius: 4px; background: #fff; color: #000; font-family: inherit; font-size: 25px; font-weight: 700; text-align: center; }
+.consent { box-sizing: border-box; width: 100%; height: 2cm; margin: 0 0 15px; padding: 5px; overflow-y: auto; border: 2px dotted #333; background: #f9f1dd; font-size: 12px; text-align: left; }
+.consent__text { color: #333; }
+.consent__end { display: flex; align-items: center; margin: 6px 0 2px; }
+.consent__box { flex: none; width: 20px; height: 20px; margin: 0 8px 0 0; cursor: pointer; }
+.consent__agree { color: #333; font-size: 13px; font-weight: 700; cursor: pointer; }
+.signin__captcha, .signin__captcha.captcha { box-sizing: border-box; width: 100%; min-width: 0; margin: 0 0 15px; }
+.signin__captcha .captcha__widget, .signin__captcha .captcha__widget > div, .signin__captcha iframe { width: 100% !important; max-width: 100%; }
+.signin__links { display: flex; justify-content: space-between; align-items: center; margin: 0 0 15px; }
+.signin__forgot { color: #2b6fc3; font-size: 14px; font-weight: 600; text-decoration: underline; }
+.signin__forgot:hover, .signin__forgot:focus, .signin__create a:hover, .signin__create a:focus { color: #00f; outline: 2px solid blue; }
+.signin__policy { display: flex; align-items: center; justify-content: center; color: #313131; font-size: 14px; font-weight: 700; cursor: pointer; }
+.signin__info { display: inline-flex; flex: none; align-items: center; justify-content: center; margin: 0 0 0 7px; padding: 0; border: 0; background: none; color: #3a1b53; line-height: 0; cursor: pointer; }
+.dialog--policy { width: auto; }
+.policy-note { padding: 20px; border: 1px solid #b0c4de; border-radius: 8px; background: #f0f4f8; }
+.policy-note ul { margin: 0 0 28px; padding: 0 0 0 20px; list-style: disc; }
+.signin__create { display: flex; justify-content: center; align-items: center; width: 100%; margin: 5px 0 0; font-family: var(--font-open); font-size: 16px; font-weight: 500; line-height: 1.6; }
+.signin__create-lead { margin-right: 15px; color: #000; }
+.signin__create a { color: #2b6fc3; font-weight: 600; text-decoration: underline; }
+.signin .alert { margin: 0 0 12px; }
+@media (min-width: 768px) {
+  .signin { background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../../images/account/login-bg-1280.jpg); }
+  .signin__card, .signin__notice { margin: 0 15px; }
+  .signin__input { font-size: 14px; }
+}
+@media (min-width: 992px) { .signin { padding: 15px 0; } }
+@media (min-width: 1366px) { .signin { background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../../images/account/login-bg-1920.jpg); } }
+@media (pointer: coarse) {
+  .signin__back { min-width: var(--tap); min-height: var(--tap); }
+  .signin__info { min-width: var(--tap); min-height: var(--tap); margin: -14.5px -14.5px -14.5px -7.5px; }
+  .signin__generate, .signin .otp-boxes__box { height: var(--tap); }
+}
+
+.signin[data-mode="forgot"] .signin__card { max-width: 400px; }
+.signin__pair { display: flex; flex-wrap: wrap; gap: .5rem 30px; }
+.signin__pair .signin__btn { padding: 15.5px 0 14.5px; }
+.signin__pair .signin__btn--cancel { background: #ab130f; }
+@media (min-width: 992px) { .signin__pair { flex-wrap: nowrap; } }

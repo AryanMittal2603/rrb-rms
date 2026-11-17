@@ -1,0 +1,19 @@
+<div class="topbar">
+  <div class="topbar__inner">
+    <p class="topbar__session"><span class="topbar__who" data-who></span> <span class="topbar__demo">{{t:rms.chrome.demo}}</span> {{t:common.topbar.session}} <span class="topbar__timer" data-countdown>29:59</span></p>
+    <div class="topbar__tools">
+      {{> fonts}}
+      {{lang-switch}}
+      <div class="avatar">
+        <button type="button" class="avatar__btn" id="avatar-btn" aria-label="{{t:common.avatar.menu}}" aria-haspopup="true" aria-expanded="false" aria-controls="avatar-menu"><img class="avatar__img" id="avatar-img" src="{{brand:icons/user-icon.png}}" alt="{{t:common.avatar.picture}}" width="42" height="42"></button>
+        <div class="avatar__menu" id="avatar-menu" hidden>
+          <div class="avatar__head"><p class="avatar__id" id="avatar-name"></p><p class="avatar__role" id="avatar-role"></p></div>
+          <a class="avatar__item" href="index.html?switch=1" data-switch-role><svg class="avatar__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 17v2H2v-2s0-4 7-4 7 4 7 4m-3.5-9.5A3.5 3.5 0 1 0 9 11a3.5 3.5 0 0 0 3.5-3.5m3.44 5.5A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4M15 4a3.39 3.39 0 0 0-1.93.59 5 5 0 0 1 0 5.82A3.39 3.39 0 0 0 15 11a3.5 3.5 0 0 0 0-7z"/></svg><span data-switch-label>{{t:rms.chrome.switchRole}}</span></a>
+          <button type="button" class="avatar__item" data-reset-demo><svg class="avatar__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.65 6.35A7.96 7.96 0 0 0 12 4a8 8 0 1 0 7.73 10h-2.08A6 6 0 1 1 12 6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg><span data-reset-label>{{t:rms.chrome.resetDemo}}</span></button>
+          <div class="avatar__divider"></div>
+          <button type="button" class="avatar__item avatar__item--danger" data-logout><svg class="avatar__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.56 5.44l-1.45 1.45A5.97 5.97 0 0 1 18 12a6 6 0 0 1-6 6 6 6 0 0 1-6-6c0-2.17 1.16-4.06 2.88-5.12L7.44 5.44A7.96 7.96 0 0 0 4 12a8 8 0 0 0 8 8 8 8 0 0 0 8-8c0-2.72-1.36-5.12-3.44-6.56M13 3h-2v10h2"/></svg>{{t:common.avatar.logout}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
